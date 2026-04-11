@@ -1,0 +1,9 @@
+name: Payment-CI-Branch
+on:
+  push:  
+    branches-ignore:
+      - 'main'
+  workflow_dispatch:
+jobs:
+   reuse:
+    uses: warmup-b60/roboshop-github-actions/.github/workflows/ci-branch.yml@main
