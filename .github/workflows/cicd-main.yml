@@ -1,4 +1,5 @@
-name: Payment-CI-Main
+name: Shipping-CI-Main
+
 on:
   push: 
     branches:
@@ -7,3 +8,5 @@ on:
 jobs:
    reuse:
     uses: warmup-b60/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    with:
+      app_type: java
